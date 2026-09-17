@@ -1175,6 +1175,9 @@ html, body {
         font-size:18px;
         text-align:center;
     }
+	.home .home-container .home-content p{
+		margin-left:0.5rem;
+	}
 
     .home .home-container .social-media{
         width:100%;
@@ -1192,6 +1195,10 @@ html, body {
 		display:flex;
 		justify-content:center;
 		align-items:center;
+	}
+
+	.home .img img{
+		margin-left:0;
 	}
 
 
@@ -1214,6 +1221,9 @@ html, body {
 		justify-content:center;
 		align-items:center;
 	}
+	..about .img img{
+		margin-left:0;
+	}
     .about .about-content .about-h h1{
         font-size:25px;
         text-align: center;
@@ -1222,6 +1232,9 @@ html, body {
         text-align: center;
         font-size: 18px;
     }
+	.about .about-content .about-h p{
+		margin-left:0.5rem;
+	}
 
     .about .about-content .btn{
         display: flex;
@@ -1247,7 +1260,7 @@ html, body {
     }
 
     .swiper {
-        width: 85%;
+        width: 90%;
         min-height: 30rem;
         /*margin: 20px auto;
         color:#1f242d;
@@ -1257,7 +1270,7 @@ html, body {
 
     }
 	.swiper-slide{
-		width:19rem;
+		width:22rem;
 	}
     .swiper-slide .btn{
         margin-top:2rem;
@@ -1279,6 +1292,8 @@ html, body {
 
 	.skills .skills-container .content{
 		width:20rem;
+		margin-right:0;
+		margin-left:0;
 	}
 	
     
@@ -1292,6 +1307,7 @@ html, body {
 
     .project .project-container .project-box{
         width: 18rem;
+		margin-left:0;
     }
     .project .project-container .project-box .img{
         width:15rem;		
