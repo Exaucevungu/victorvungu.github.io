@@ -1064,7 +1064,7 @@ html, body {
 
     .menu-bars{
         display:block;
-        /*margin-right:rem;*/
+		margin-right:2rem;
     }
     
     .menu{
