@@ -1216,13 +1216,14 @@ html, body {
 		margin-left:0;
 	}
 	..about .img{
-		width:99%;
+		width:100%;
 		display:flex;
 		justify-content:center;
 		align-items:center;
 	}
-	..about .img img{
+	..about .about-img img{
 		margin-left:0;
+		margin-right:0;
 	}
     .about .about-content .about-h h1{
         font-size:25px;
@@ -1251,7 +1252,7 @@ html, body {
         /*flex-direction: column;*/
 		align-items:center;
 		justify-content:center;
-		width:99%;
+		width:100%;
 		
     }
 
@@ -1270,7 +1271,7 @@ html, body {
 
     }
 	.swiper-slide{
-		width:22rem;
+		width:24rem;
 	}
     .swiper-slide .btn{
         margin-top:2rem;
@@ -1302,12 +1303,13 @@ html, body {
     .project .project-container{
         display: flex;
         flex-direction: column;
-		width:99%;
+		width:100%;
     }
 
     .project .project-container .project-box{
         width: 18rem;
 		margin-left:0;
+		margin-right:0;
     }
     .project .project-container .project-box .img{
         width:15rem;		
@@ -1358,285 +1360,7 @@ html, body {
 
 
 
-@media (max-width:600px){
 
-
-	.menu-bars{
-        display:block;
-		margin-right:2rem;
-    }
-    
-    .menu{
-        display: none;
-        overflow-y: auto;
-    }
-    .show-menu{
-        display:block;
-        transition: 1s ease-in-out;
-    }
-    
-    .menu .menu-list{
-        position:absolute;
-        margin-top:2rem;
-        width:70%;
-        border-radius:2px;
-        display:block;
-        left:0;
-        background-color:#1f242d;
-        height:500px;
-        overflow-y: auto;
-    }
-    .menu .menu-list li{
-       margin-top:2rem;
-       
-    }
-    /*.sub-menu ul{
-        display:block;   
-        margin-left:17rem; 
-        margin-top:-4rem;
-        padding-top:-2rem;
-        padding-bottom:1rem;
-                
-    }
-    .sub-menu {
-    position:absolute;
-    padding-top: 1rem;
-    margin-left:-15px;
-    width:10rem;
-    transition: 0.5s ease;
-    
-}
-.sub-menu ul{
-    display:none;
-    background-color:#1f242d;
-    position: absolute;
-    border-radius: 2px;
-    list-style:none;
-    padding-bottom: 1rem;
-    width:100%; 
-}
-.sub-menu ul li a{
-    text-align: center;
-    font-size:12px;
-}
-        
-    */
-
-    .sub-menu{
-        position:relative;
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin:0;
-
-    }
-
-    .sub-menu ul{
-        position: relative;
-        display: none;
-        flex-direction: column;
-        background-color: #323946;
-        transition: 0.8s ease-out;
-    }
-
-    .sub-menu ul li:hover a{
-        color:#0ef;
-    }
-
-    .sub-menu ul li{
-        margin-left:2rem;
-       
-    }
-   
-    .menu .menu-list li:hover.sub-menu ul{
-        display:flex;   
-    } 
-
-/*    ####################################################################### */    
-    
-    .home{
-        display:flex;
-        flex-direction: column;
-        gap:2.5rem;
-    }
-	.home .home-container{
-		width:99%;
-		margin-left:0;
-	}
-
-    .home .home-container .home-content h1{
-        text-align: center;
-        font-size:20px;
-    }
-    .home .home-container .home-content h3{
-        font-size:18px;
-        text-align:center;
-    }
-
-    .home .home-container .social-media{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .home .home-container .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-	.home .img{
-		width:99%;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-	}
-
-
-
-
-/*#######################################################################*/
-
-    .about{
-        display: flex;
-        flex-direction: column-reverse;
-        gap:2.5rem;
-    }
-	.about .about-content{
-		width:99%;
-		margin-left:0;
-	}
-	..about .img{
-		width:99%;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-	}
-    .about .about-content .about-h h1{
-        font-size:25px;
-        text-align: center;
-    }
-    .about .about-content .about-h h3{
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .about .about-content .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-   
-
-    /*#########################################################"*/
-
-    .education .education-container{
-        display: flex;
-        /*flex-direction: column;*/
-		align-items:center;
-		justify-content:center;
-		width:99%;
-		
-    }
-
-    .education .education-container .content{
-        width:20rem;
-    }
-
-    .swiper {
-        width: 85%;
-        min-height: 30rem;
-        /*margin: 20px auto;
-        color:#1f242d;
-        padding-top: 2rem;
-        padding-left:1rem;
-        padding-right: 1rem;*/
-
-    }
-	.swiper-slide{
-		width:19rem;
-	}
-    .swiper-slide .btn{
-        margin-top:2rem;
-    }
-
-
-
-
-
-
-	/*######################################################*/
-
-    .skills .skills-container{
-        display: flex;
-        flex-direction: column;
-        gap:2rem;
-		width:99%;
-    }
-
-	.skills .skills-container .content{
-		width:20rem;
-	}
-	
-    
-    /* #############################################################*/
-
-    .project .project-container{
-        display: flex;
-        flex-direction: column;
-		width:99%;
-    }
-
-    .project .project-container .project-box{
-        width: 18rem;
-    }
-    .project .project-container .project-box .img{
-        width:15rem;		
-    }
-	 .project .project-container .project-box .btn{
-        gap:1rem;
-    }
-    .project .project-container .project-box .btn button{
-        margin-left:0;
-        
-    }
-
-
-
-	/*##########################################*/
-	
-    .contact .form form{
-        width:20rem;
-    }
-
-    .contact .form form input{
-        width:19rem;
-    }
-    .contact .form form .message textarea{
-        width:19rem;
-    }
-
-    .contact .social-media a{
-        margin-left:0.5rem;
-    }
-
-	/*##################################""""*/
-
-	.footer .icon{
-        margin-right:3rem;
-    }
-    .footer .footer-content p{
-        font-size: 10px;
-    }
-    
-	
-
-
-
-	
-}
 
 
 
