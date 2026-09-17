@@ -1198,7 +1198,7 @@ html, body {
 	}
 
 	.home .img img{
-		margin-left:0;
+		margin-left:-0.5rem;
 	}
 
 
@@ -1222,7 +1222,7 @@ html, body {
 		align-items:center;
 	}
 	..about .about-img img{
-		margin-left:0;
+		margin-left:-1.5rem;
 		margin-right:0;
 	}
     .about .about-content .about-h h1{
@@ -1233,7 +1233,7 @@ html, body {
         text-align: center;
         font-size: 18px;
     }
-	.about .about-content .about-h p{
+	.about .about-content p{
 		margin-left:0.5rem;
 	}
 
@@ -1261,7 +1261,7 @@ html, body {
     }
 
     .swiper {
-        width: 90%;
+        width: 95%;
         min-height: 30rem;
         /*margin: 20px auto;
         color:#1f242d;
@@ -1304,6 +1304,7 @@ html, body {
         display: flex;
         flex-direction: column;
 		width:100%;
+		margin-left:0;
     }
 
     .project .project-container .project-box{
