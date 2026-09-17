@@ -1,0 +1,542 @@
+
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>Responsive Personal Portfolio Website </title>
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <!--Sliding cards-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+        />
+        <!--FROM GOOGLE-->
+        <!--link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com" rel="stylesheet"-->
+        
+
+        <!-- SCROLL REVEAL -->
+	
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal({ reset: true, });
+        </script>
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+
+        <link rel="stylesheet" href="portfolio.css">
+        <script src="portfolio.js" defer></script>
+
+
+
+    </head>
+    <body class="body">
+        
+        <header class="header">
+            <h1 class="logo">MyPort<span>folio</span></h1>
+            
+            <div class="menu">
+                <ul class="menu-list">
+                    <li><a href="#home" class="active"><i class="fa-regular fa-house"></i>Home</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#home">Home</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#about"><i class="fa-solid fa-circle-info"></i>About</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#about">AboutMe</a></li>
+                                <li><a href="#about">AboutMe</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#education"><i class="fa-solid fa-graduation-cap"></i>Education</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#education">Training</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#projects"><i class="fa-sharp fa-solid fa-chart-line"></i>Projects</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#project">Project</a></li>
+                                <li><a href="#project">Project</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#contact"><i class="fa-duotone fa-solid fa-phone"></i>ContactMe</a></li>
+                </ul>
+            </div>
+            <div class="menu-bars">
+                <a href="#"><i class="fa-solid fa-bars" id="menu-icon"></i></a>
+            </div>
+
+        </header>
+
+
+
+
+
+
+
+
+        <section class="home" id="home">
+            <div class="home-container">
+                <div class="home-content">
+                    <h3><span style="color:#0ef">Hi! </span>Welcome to My Portfolio!</h3>
+                    <h1>I am Victor Vungu N. Claudio and I am a <span>web developer!</span></h1>                
+                    <h3>Personal Portfolio</h3>
+                    <p>I am pleased to see you here;<br>
+                        I give you a warm welcome and wish you to enjoy the reading all along!
+                        
+                    </p>
+                    <h3>Find Me on:</h3>
+                </div>
+                <div class="social-media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <div class="btn">
+                    <button><a href="">Download my CV</a></button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="mypicture.jpg" alt="portfolio" class="home-img">
+            </div>
+        </section>
+        
+        
+
+
+
+
+
+
+        <section class="about" id="about">
+
+            <div class="about-img">
+                <a href="#"><img src="mypicture.jpg" alt="portfolio" class="about-img"></a>
+            </div>
+            <div class="about-content">
+                <div class="about-h">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Victor Vungu Nsiangi Claudio</h3>
+                    <h3>Telecommunications Engineering Student</h3>
+                </div>
+                <p> I am Victor Vungu, I study Telecommunications and Electronics engineering,<br>
+                    I study at UTANGA (Universidade Tecnica de Angola), I am on my third year.<br>
+                    I live in Angola, Luanda city. That's all for now.  
+                        
+                </p>
+                <div class="btn">
+                    <button><a href="#">Read More</a></button>
+                </div>
+
+            </div>
+
+        
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <section class="education" id="education">
+            <div class="education-h">
+                <h1><span>My </span>Education</h1>
+            </div>
+            <!-- Swiper -->
+	        <div class="container">
+		        <div #swiperRef="" class="swiper mySwiper">
+		            <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+				            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                            <h2>Cisco Certified Network Associate-CCNA</h2>
+                            <p>I am Cisco Certified Network Associate.<br> 
+                                I did my CCNA training at CFITEL(Centro de Formaçao do Instituto de Telecomunicaçoes),<br>
+                                which is a professional training center under the control of Telecommunications Ministery in Angola.
+                                I did three(3) modules of CCNA: CCNA 1, CCNA 2 and CCNA 3 before being certified.
+
+					
+				            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+				
+			
+			            </div>
+			            <div class="swiper-slide">
+                            <div class="icon">
+					            <a href="#"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                            <h2>Cisco Certified Network Professional-CCNP</h2>
+                            <p> I am studying Cisco Certified Network Professional.<br> 
+                                I am taking my CCNP training at CFITEL(Centro de Formaçao do Instituto de Telecomunicaçoes),<br>
+                                which is a professional training center under the control of Telecommunications Ministery in Angola.
+                                    
+                            </p>
+                            <div class="btn">
+					            <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-windows"></i></a>
+                            </div>
+                            <h2>Windows Server</h2>
+                            <p> I am studying Windows Server.<br> 
+                                I am taking my Windows Server training at CFITEL(Centro de Formaçao do Instituto de Telecomunicaçoes),<br>
+                                which is a professional training center under the control of Telecommunications Ministery in Angola.<br>
+                                This professional training will help me to manager windows servers, configure a server, <br>
+                                virtualize many servers into one physical server, set up basic services like Active Directory Domain Services,<br>
+                                DNS, DHCP...
+                            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-video"></i></i></a>
+                            </div>
+                            <h2>Closed Circuit Television-CCTV</h2>
+                            <p>I have taken my CCTV training<br>
+                                That helps me to set up a closed circuit of IP cameras, <br>
+                                in order to improve physical security on a location.    
+                            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>            
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-ethernet"></i></i></a>
+                            </div>
+                            <h2>Fiber Optic cabling</h2>
+                            <p> I did fiber optic training<br>                                
+                                I did my Fiber Optic training at CFITEL(Centro de Formaçao do Instituto de Telecomunicaçoes),<br>
+                                This training consist at setting up Fiber Optic network, troubleshoot problems.    
+                            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-html5"></i></a>
+                            </div>
+                            <h2>Front-End Developer</h2>
+                            <p>I learn by myself how to build websites using html, css and javascript.<br>
+                                I have been doing this for two  years and this, this portfolio is the result of my self-study.<br>
+                                I intend to improve my skills so that I can work on big future projects.    
+                            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-python"></i></a>
+                            </div>
+                            <h2>Programming</h2>
+                            <p>I do program<br> 
+                                I am still learning programming, i first started my programming journey with Python two years ago,<br>
+                                now I am interested also in order programming languages such as C# that I learnt at UTANGA, Improve my javascript skills,<br>
+                                Java,  C and C++ .
+                            </p>
+                            <div class="btn">
+					            <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="icon">
+					            <a href="#"><i class="fa-solid fa-language"></i></i></a>
+                            </div>
+                            <h2>Spoken Languages</h2>
+                            <p>I do speak four languages, three international languages and one local language<br>
+                                I speak and learn english beacause I work in Tech, that helps me to be smooth and interact<br>
+                                with many tech concept easily and understand them;<br>
+                                I do speak french beacause I studed in french speak school for so many years;<br>
+                                I do speak portuguee beacause I live in portuguese speaker country.
+                            </p>
+                            <div class="btn">
+                                <button ><a href="#">Download Certificate</a></button>
+                            </div>
+                        </div>
+			            <!--div class="swiper-slide">Slide 2</div>
+			            <div class="swiper-slide">Slide 3</div>
+			            <div class="swiper-slide">Slide 4</div>
+			            <div class="swiper-slide">Slide 5</div>
+			            <div class="swiper-slide">Slide 6</div>
+			            <div class="swiper-slide">Slide 7</div>
+			            <div class="swiper-slide">Slide 8</div-->
+		            </div>
+		            <div class="swiper-button-next"></div>
+		            <div class="swiper-button-prev"></div>
+		            <div class="swiper-pagination"></div>
+		            </div>
+	            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="skills" id="skills">
+		    <h1><span>My</span> skills</h1>
+		    <div class="skills-container">
+			    <div class="content">
+				    <h2>Coding Skills</h2>
+				    <div class="sub-content1">
+					    <div class="sub-content2">
+						    <div class="sub-content">
+							    <h3>HTML <span>80%</span></h3>
+							    <div class="bar"><span style="width:80%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>CSS <span>80%</span></h3>
+							    <div class="bar"><span style="width:80%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>Javascript <span>40%</span></h3>
+							    <div class="bar"><span style="width:40%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>PHP <span>40%</span></h3>
+							    <div class="bar"><span style="width:40%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>SQL <span>60%</span></h3>
+							    <div class="bar"><span style="width:60%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>Python <span>70%</span></h3>
+							    <div class="bar"><span style="width:70%;"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>C# <span>70%</span></h3>
+							    <div class="bar"><span style="width:70%;"></span></div>
+						    </div>
+						
+					    </div>
+				    </div>
+			    </div>
+			    <div class="content">
+				    <h2>Professional Skills</h2>
+				    <div class="sub-content1">
+					    <div class="sub-content2">
+						    <div class="sub-content">
+							    <h3>User Interface Design <span>10%</span></h3>
+							    <div class="bar"><span style="width:10%"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>Web Development(Front-End) <span>70%</span></h3>
+							    <div class="bar"><span style="width:70%"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>Web Development(Back-end) <span>30%</span></h3>
+							    <div class="bar"><span style="width:30%"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>Entreprise Resource Planing-ERP system <span>60%</span></h3>
+							    <div class="bar"><span style="width:60%"></span></div>
+						    </div>						
+						    <div class="sub-content">
+							    <h3>Network Administration <span>80%</span></h3>
+							    <div class="bar"><span style="width:80%"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>System Administration <span>50%</span></h3>
+							    <div class="bar"><span style="width:50%"></span></div>
+						    </div>
+						    <div class="sub-content">
+							    <h3>IT Support <span>70%</span></h3>
+							    <div class="bar"><span style="width: 70%;"></span></div>
+						    </div>
+												
+					    </div>
+				    </div>
+			    </div>			
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+        <section class="project" id="projects">
+            <div class="project-h">
+                <h1><span>My</span> Projects</h1>
+            </div>
+
+            <div class="project-container">
+                <div class="project-box">
+                    <div class="img">
+                        <img src="img1.jpg" alt="Portfolio" class="img">
+                    </div>
+                    <div class="content">
+                        <h3>Portfolio</h3>
+                        <p> This is my first project, using my skills in html, css<br>
+                            and javascript.
+                               
+                        </p>
+                        <!--a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a-->
+                    </div>
+                    <div class="btn">
+                        <button><a href="">Demo</a></button>
+                        <button><a href="">Read More</a></button>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="img">
+                        <img src="img2.jpg" alt="Portfolio" class="img">
+                    </div>
+                    <div class="content">
+                        <h3>Library Management Software With C#</h3>
+                        <p> That's was a school project, <br>
+                            I did my first Entreprise Resource Planing using C#, SQL and API.                               
+                        </p>
+                        <!--a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a-->
+                    </div>
+                    <div class="btn">
+                        <button><a href="">Demo</a></button>
+                        <button><a href="">Read More</a></button>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="img">
+                        <img src="img3.jpg" alt="Portfolio" class="img">
+                    </div>
+                    <div class="content">
+                        <h3>Portfolio</h3>
+                        <p> This is my first project, using my skills in html, css<br>
+                            and javascript.
+                               
+                        </p>
+                        <!--a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a-->
+                    </div>
+                    <div class="btn">
+                        <button><a href="">Demo</a></button>
+                        <button><a href="">Read More</a></button>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <div class="img">
+                        <img src="img4.jpg" alt="Portfolio" class="img">
+                    </div>
+                    <div class="content">
+                        <h3>Portfolio</h3>
+                        <p> This is my first project, using my skills in html, css<br>
+                            and javascript.
+                        </p>
+                        <!--a href="#"><i class="fa-solid fa-circle-arrow-up"></i></a-->
+                    </div>
+                    <div class="btn">
+                        <button><a href="">Demo</a></button>
+                        <button><a href="">Read More</a></button>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <section class="contact" id="contact">
+            <div class="contact-h">
+                <h1>Contact <span>Me</span></h1>
+            </div>
+            <div class="form">
+                <form action="POST">
+                    <div class="input">
+                    <input type="name" id="username" name="username" placeholder="Enter your name">
+                        <input type="number" id="phone-number" name="number" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address">
+                        <input type="text" id="email-subject" name="text" placeholder="Enter the subject">
+                    </div>
+                    <div class="message">
+                        <textarea ></textarea>
+                        <button ><a href="#">Submit</a></button>
+                    </div>
+            </form>
+            </div>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </section>
+        
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        
+        <script src="experiment.js" defer></script>
+
+    </body>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Copy right 2020–2026 My portfolio. All rights reserved</p>
+        </div>
+        <div class="icon">
+            <a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a>
+        </div>
+    </footer>
+</html>
+
+
+
+
