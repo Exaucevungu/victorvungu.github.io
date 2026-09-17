@@ -1198,7 +1198,7 @@ html, body {
 	}
 
 	.home .img img{
-		margin-left:-0.5rem;
+		margin-left:-1rem;
 	}
 
 
@@ -1222,7 +1222,7 @@ html, body {
 		align-items:center;
 	}
 	..about .about-img img{
-		margin-left:-1.5rem;
+		margin-left:-2rem;
 		margin-right:0;
 	}
     .about .about-content .about-h h1{
@@ -1256,10 +1256,7 @@ html, body {
 		
     }
 
-    .education .education-container .content{
-        width:20rem;
-    }
-
+    
     .swiper {
         width: 95%;
         min-height: 30rem;
