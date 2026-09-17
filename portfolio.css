@@ -13,6 +13,10 @@
     
 }
 
+html{
+	max-width:100%;
+	overflow-x:hidden;
+}
 
 .header{
     position: fixed;
@@ -129,8 +133,9 @@
     display:flex;
     justify-content: center;
     align-items:center;
-    padding-top:7rem;
-    background-color: #F0F8FF
+    padding-top:5rem;
+	padding-bottom:4rem;
+    background-color: #F0F8FF;
 }
 
 .home .img{
@@ -245,8 +250,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-top:15rem;
-    padding-bottom: 10rem;
+    padding-top:7rem;
+    padding-bottom: 6rem;
     overflow-wrap: break-word;
     background-color: white;
 
@@ -330,7 +335,7 @@
 
 
 .education{    
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-left: 3rem;
     padding-bottom: 5rem;
     background-color: #F0F8FF
@@ -359,7 +364,7 @@
 }
 
 .swiper {
-    width: 80%;
+    width: 90%;
     min-height: 30rem;
     margin: 20px auto;
     color:#1f242d;
@@ -375,7 +380,7 @@
 	text-align: center;
     font-size: 18px;
     background: #444;
-    width:15rem;
+    width:20rem;
     min-height:25rem;
     border-style: solid;
     border-color: #1f242d;
@@ -393,9 +398,9 @@
   transform:scale(1.08);
 }
 
-.swiper-slide .icon {
+/*.swiper-slide .icon {
 	margin-top:-3rem;
-}
+}*/
 .swiper-slide .icon a{
 	font-size:1.5rem;
 	border-style:solid;
@@ -413,9 +418,10 @@
 	font-size:15px;
 	line-height:15px;
     margin-left: 0.5rem;
-    text-align: center;
 	overflow-wrap:break-word;
+	overflow:hidden;
     width:98%;
+	height:12rem;
     color:#1f242d;
 }
 
@@ -460,8 +466,8 @@
 
 
 .skills{
-	padding-top:10rem;
-	padding-bottom:10rem;
+	padding-top:6rem;
+	padding-bottom:6rem;
 }
 
 .skills h1{
@@ -571,8 +577,8 @@
 
 
 .project{
-    padding-top:10rem;
-    padding-bottom:10rem;
+    padding-top:6rem;
+    padding-bottom:6rem;
     background-color: #F0F8FF
 }
 
@@ -652,6 +658,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+	gap:1rem;
 }
 
 .project .project-container .project-box .btn button{
@@ -661,7 +668,6 @@
     border-color: #323946;
     border-radius: 5px;
     border-style: solid;
-    margin-left: 2rem;
     transition: 0.8s ease-out;
 }
 
@@ -690,7 +696,7 @@
 .contact{
     padding-top:10rem;
     padding-bottom:10rem;
-    background-color: #F0F8FF
+    background-color: #fff;
 }
 
 .contact .contact-h{
@@ -1052,7 +1058,7 @@
 
     .menu-bars{
         display:block;
-        margin-right:3rem;
+        margin-right:6rem;
     }
     
     .menu{
@@ -1212,7 +1218,7 @@
     }
 
     .swiper {
-        width: 60%;
+        width: 80%;
         min-height: 30rem;
         /*margin: 20px auto;
         color:#1f242d;
@@ -1221,9 +1227,30 @@
         padding-right: 1rem;*/
 
     }
+	.swiper-slide{
+		width:16rem;
+	}
     .swiper-slide .btn{
         margin-top:2rem;
     }
+
+
+
+
+
+
+	/*######################################################*/
+
+    .skills .skills-container{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+	.skills .skills-container .content{
+		width:20rem;
+	}
+	
     
     /* #############################################################*/
 
@@ -1233,40 +1260,52 @@
     }
 
     .project .project-container .project-box{
-        width: 20rem;
+        width: 18rem;
     }
     .project .project-container .project-box .img{
-        width:15rem;
+        width:15rem;		
+    }
+	 .project .project-container .project-box .btn{
+        gap:1rem;
+    }
+    .project .project-container .project-box .btn button{
+        margin-left:0;
+        
     }
 
+
+
+	/*##########################################*/
+	
     .contact .form form{
-        width:25rem;
+        width:20rem;
     }
 
     .contact .form form input{
-        width:24rem;
+        width:19rem;
     }
     .contact .form form .message textarea{
-        width:24rem;
+        width:19rem;
     }
 
     .contact .social-media a{
-        margin-left:1rem;
+        margin-left:0.5rem;
     }
 
+	/*##################################""""*/
 
-
-
-
-    /*######################################################*/
-
-    .skills .skills-container{
-        display: flex;
-        flex-direction: column;
-        gap:2rem;
+	.footer .icon{
+        margin-right:3rem;
     }
+    .footer .footer-content p{
+        font-size: 10px;
+    }
+
+    
     
 }
+
+
 
 
 
