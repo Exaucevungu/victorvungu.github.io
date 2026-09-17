@@ -129,4 +129,24 @@ ScrollReveal().reveal('.contact .social-media', {origin:'bottom'});
 
 
 
+/*################## WHEN YOU CLICK THE NAVBAR DISAPPEARS ######################*/
+const btns = document.querySelectorAll('.header .menu .menu-list li a ');
+
+btns.forEach((btn) => {
+    btn.addEventListener('click',() =>{
+      if (menuList.classList.contains('show-menu')) {
+    // Instantly replace bars with X
+    menuIcon.classList.add('fa-bars');
+    menuIcon.classList.remove('fa-xmark'); // Note: 'fa-xmark' is used in FA v6; use 'fa-times' for FA v5
+    menuList.classList.remove('show-menu');
+  } else {
+    // Instantly replace X back to bars
+    menuIcon.classList.add('fa-xmark');
+    menuIcon.classList.remove('fa-bars');
+    menuList.classList.add('show-menu');
+    
+  }
+    } );
+});
+
 
