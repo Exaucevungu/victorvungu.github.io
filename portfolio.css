@@ -1215,14 +1215,16 @@ html, body {
 		width:99%;
 		margin-left:0;
 	}
-	..about .img{
+	..about .about-img{
 		width:100%;
 		display:flex;
 		justify-content:center;
 		align-items:center;
+		margin-left:0;
+		margin-right:0;
 	}
 	..about .about-img img{
-		margin-left:-2rem;
+		margin-left:0;
 		margin-right:0;
 	}
     .about .about-content .about-h h1{
