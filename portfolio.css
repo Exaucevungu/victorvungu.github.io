@@ -1215,7 +1215,7 @@ html, body {
 		width:99%;
 		margin-left:0;
 	}
-	..about .about-img{
+	.about .about-img{
 		width:100%;
 		display:flex;
 		justify-content:center;
@@ -1223,7 +1223,7 @@ html, body {
 		margin-left:0;
 		margin-right:0;
 	}
-	..about .about-img img{
+	.about .about-img img{
 		margin-left:0;
 		margin-right:0;
 	}
